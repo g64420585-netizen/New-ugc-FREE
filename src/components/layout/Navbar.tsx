@@ -36,7 +36,7 @@ export function Navbar() {
             <Hexagon className="w-6 h-6 text-primary" strokeWidth={2} />
             <div className="absolute inset-0 bg-primary/20 blur-xl opacity-0 group-hover:opacity-100 transition-opacity" />
           </div>
-          <span className="font-mono text-xl font-bold tracking-tight text-white">BestUGCs</span>
+          <span className="font-mono text-xl font-bold tracking-tight text-white">UGC Free</span>
         </Link>
 
         {/* Desktop Nav */}
