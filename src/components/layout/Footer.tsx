@@ -12,7 +12,7 @@ export function Footer() {
               <div className="relative flex items-center justify-center w-8 h-8 bg-primary/10 rounded-lg">
                 <Hexagon className="w-5 h-5 text-primary" strokeWidth={2} />
               </div>
-              <span className="font-mono text-xl font-bold tracking-tight text-white">BestUGCs</span>
+              <span className="font-mono text-xl font-bold tracking-tight text-white">UGC Free</span>
             </Link>
             <p className="text-muted-foreground max-w-sm">
               The premier destination for elite Roblox UGC collectors. Discover, trade, and showcase the most exclusive limited-edition items on the platform.
@@ -53,7 +53,7 @@ export function Footer() {
         
         <div className="pt-8 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-xs text-muted-foreground">
-            &copy; {new Date().getFullYear()} BestUGCs. Not affiliated with Roblox Corporation.
+            &copy; {new Date().getFullYear()} UGC Free. Not affiliated with Roblox Corporation.
           </p>
           <div className="flex gap-4 text-xs text-muted-foreground">
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
