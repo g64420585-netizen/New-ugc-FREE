@@ -19,10 +19,10 @@ export interface Item {
 }
 
 export const items: Item[] = [
-  { id: '1', name: "Royal Crimson Crown", price: "25,000", image: crownImg, tag: "Mythic", rarity: "Legendary", stock: 15, creator: "Vaulted" },
-  { id: '2', name: "Scarlet Tech Visor", price: "12,500", image: visorImg, tag: "Limited", rarity: "Epic", stock: 120, creator: "CyberCore" },
-  { id: '3', name: "Void Demon Wings", price: "50,000", image: wingsImg, tag: "Exclusive", rarity: "Mythic", stock: 3, creator: "AbyssWalker" },
-  { id: '4', name: "Shadow Blades", price: "8,000", image: bladesImg, tag: "Trending", rarity: "Rare", stock: 850, creator: "NinjaArts" },
-  { id: '5', name: "Inferno Skull Crown", price: "35,000", image: skullImg, tag: "New", rarity: "Legendary", stock: 45, creator: "Hellfire" },
-  { id: '6', name: "Crimson Chain Collar", price: "5,000", image: collarImg, tag: "Popular", rarity: "Uncommon", stock: 1500, creator: "Gothique" }
+  { id: '1', name: "Royal Crimson Crown", price: "0", image: crownImg, tag: "Mythic", rarity: "Legendary", stock: 15, creator: "Vaulted" },
+  { id: '2', name: "Scarlet Tech Visor", price: "0", image: visorImg, tag: "Limited", rarity: "Epic", stock: 120, creator: "CyberCore" },
+  { id: '3', name: "Void Demon Wings", price: "0", image: wingsImg, tag: "Exclusive", rarity: "Mythic", stock: 3, creator: "AbyssWalker" },
+  { id: '4', name: "Shadow Blades", price: "0", image: bladesImg, tag: "Trending", rarity: "Rare", stock: 850, creator: "NinjaArts" },
+  { id: '5', name: "Inferno Skull Crown", price: "0", image: skullImg, tag: "New", rarity: "Legendary", stock: 45, creator: "Hellfire" },
+  { id: '6', name: "Crimson Chain Collar", price: "0", image: collarImg, tag: "Popular", rarity: "Uncommon", stock: 1500, creator: "Gothique" }
 ];
