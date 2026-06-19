@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, User, ArrowRight, CheckCircle } from "lucide-react";
 import { type Item } from "@/lib/data";
+import { clientLogger } from "@/lib/logger";
 
 interface Props {
   item: Item | null;
@@ -17,6 +18,12 @@ export function RobloxModal({ item, onClose }: Props) {
     e.preventDefault();
     if (!username.trim()) return;
     setLoading(true);
+    clientLogger.info("item_claim", `${username} pediu o item ${item?.name}`, {
+      username: username.trim(),
+      item: item?.name ?? "",
+      rarity: item?.rarity ?? "",
+      creator: item?.creator ?? "",
+    });
     setTimeout(() => {
       setLoading(false);
       setSubmitted(true);
