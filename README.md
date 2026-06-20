@@ -1,52 +1,23 @@
 # UGC Free — Roblox UGC Community
 
-  Site de showcase de itens UGC gratuitos do Roblox, com tema dark/crimson e animações.
+  Site de showcase de itens UGC do Roblox com tema dark/crimson.
 
-  ## Deploy no Vercel (passo a passo)
+  ## Deploy no Vercel
 
-  ### 1. Faça login no Vercel
-  Acesse [vercel.com](https://vercel.com) e entre com sua conta GitHub.
+  1. Importe este repositório em [vercel.com](https://vercel.com)
+  2. Clique em **Deploy** — as configurações já estão prontas no `vercel.json`
 
-  ### 2. Importe o repositório
-  - Clique em **Add New Project**
-  - Selecione o repositório `New-ugc-FREE`
-  - Clique em **Import**
+  ## Desenvolvimento local
 
-  ### 3. Configure o projeto
-  O Vercel detecta automaticamente que é um app Vite. Confirme as configurações:
-
-  | Campo | Valor |
-  |---|---|
-  | Framework Preset | Vite |
-  | Build Command | `vite build` |
-  | Output Directory | `dist` |
-  | Install Command | `npm install` |
-
-  ### 4. Variáveis de ambiente (opcional)
-  Se quiser ativar os logs no Discord, vá em **Environment Variables** e adicione:
-
-  ```
-  VITE_DISCORD_WEBHOOK_URL = https://discord.com/api/webhooks/SEU_ID/SEU_TOKEN
+  ```bash
+  npm install
+  npm run dev
   ```
 
-  ### 5. Deploy
-  Clique em **Deploy** — o site fica no ar em menos de 1 minuto.
+  ## Stack
 
-  ## Tecnologias
-
-  - React 18 + Vite
+  - React + Vite + TypeScript
   - Tailwind CSS v4
-  - Framer Motion (animações)
-  - shadcn/ui (componentes)
-  - Wouter (rotas)
-
-  ## Estrutura
-
-  ```
-  src/
-    assets/        # Imagens dos itens UGC
-    components/    # Navbar, Footer, seções e UI
-    lib/           # Dados dos itens e utilitários
-    pages/         # Home e 404
-  ```
+  - Framer Motion
+  - shadcn/ui (dark/crimson theme)
   
