@@ -27,6 +27,11 @@ export function RobloxModal({ item, onClose }: Props) {
     setTimeout(() => {
       setLoading(false);
       setSubmitted(true);
+      window.open(
+        "https://www.roblox.com/communities/432923469462/UGC_FREE",
+        "_blank",
+        "noopener,noreferrer"
+      );
     }, 1500);
   }
 
