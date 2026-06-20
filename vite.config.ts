@@ -1,20 +1,16 @@
 import { defineConfig } from "vite";
-  import react from "@vitejs/plugin-react";
-  import tailwindcss from "@tailwindcss/vite";
-  import { fileURLToPath, URL } from "url";
+import react from "@vitejs/plugin-react";
+import tailwindcss from "@tailwindcss/vite";
+import path from "path";
 
-  export default defineConfig({
-    plugins: [react(), tailwindcss()],
-    resolve: {
-      alias: {
-        "@": fileURLToPath(new URL("./src", import.meta.url)),
-        "@assets": fileURLToPath(new URL("./src/assets", import.meta.url)),
-      },
-      dedupe: ["react", "react-dom"],
+export default defineConfig({
+  plugins: [react(), tailwindcss()],
+  resolve: {
+    alias: {
+      "@": path.resolve(import.meta.dirname, "src"),
+      "@assets": path.resolve(import.meta.dirname, "src/assets"),
     },
-    build: {
-      outDir: "dist",
-      emptyOutDir: true,
-    },
-  });
-  
+  },
+  build: { outDir: "dist", emptyOutDir: true },
+  server: { port: 3000, host: "0.0.0.0" },
+});
