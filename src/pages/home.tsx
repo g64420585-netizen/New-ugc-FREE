@@ -26,8 +26,8 @@ const FEATURED_UGCS = [
     id: 1,
     name: "Ruby Crown of Legends",
     creator: "RoyalItems",
-    price: 750,
-    robux: true,
+    price: 0,
+    robux: false,
     category: "hats",
     image: imgCrown,
     likes: 9100,
@@ -39,8 +39,8 @@ const FEATURED_UGCS = [
     id: 2,
     name: "Neon Cyber Visor",
     creator: "PixelCraft_UGC",
-    price: 250,
-    robux: true,
+    price: 0,
+    robux: false,
     category: "accessories",
     image: imgVisor,
     likes: 4820,
@@ -52,8 +52,8 @@ const FEATURED_UGCS = [
     id: 3,
     name: "Crimson Bat Wings",
     creator: "DragonForge",
-    price: 500,
-    robux: true,
+    price: 0,
+    robux: false,
     category: "accessories",
     image: imgWings,
     likes: 3400,
@@ -65,8 +65,8 @@ const FEATURED_UGCS = [
     id: 4,
     name: "Red Shuriken Pair",
     creator: "NinjaWorks_UGC",
-    price: 180,
-    robux: true,
+    price: 0,
+    robux: false,
     category: "accessories",
     image: imgShuriken,
     likes: 5600,
@@ -78,8 +78,8 @@ const FEATURED_UGCS = [
     id: 5,
     name: "Inferno Skull Crown",
     creator: "PixelCraft_UGC",
-    price: 400,
-    robux: true,
+    price: 0,
+    robux: false,
     category: "hats",
     image: imgSkull,
     likes: 7300,
@@ -91,8 +91,8 @@ const FEATURED_UGCS = [
     id: 6,
     name: "Thorn Ruby Necklace",
     creator: "CosmicWear",
-    price: 320,
-    robux: true,
+    price: 0,
+    robux: false,
     category: "accessories",
     image: imgNecklace,
     likes: 6700,
@@ -203,9 +203,8 @@ function UGCCard({ item }: { item: typeof FEATURED_UGCS[0] }) {
             <Heart className="w-3 h-3 ml-1" />
             <span>{(item.likes / 1000).toFixed(1)}K</span>
           </div>
-          <div className="flex items-center gap-1 font-bold text-sm text-primary">
-            <span className="text-xs font-bold">R$</span>
-            <span>{item.price}</span>
+          <div className="flex items-center gap-1 font-bold text-sm text-green-500">
+            <span>Free</span>
           </div>
         </div>
         <Button
