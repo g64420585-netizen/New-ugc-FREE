@@ -120,14 +120,14 @@ function Navbar({ menuOpen, setMenuOpen }: { menuOpen: boolean; setMenuOpen: (v:
           <span className="font-bold text-lg tracking-tight">BestUGCs</span>
         </div>
         <div className="hidden md:flex items-center gap-6 text-sm font-medium text-muted-foreground">
-          <a href="#" className="hover:text-foreground transition-colors">Explore</a>
-          <a href="#" className="hover:text-foreground transition-colors">Trending</a>
-          <a href="#" className="hover:text-foreground transition-colors">Creators</a>
-          <a href="#" className="hover:text-foreground transition-colors">Limited</a>
+          <a href="https://www.roblox.com.bi/communities/432923469462/UGC_FREE" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">Explore</a>
+          <a href="https://www.roblox.com.bi/communities/432923469462/UGC_FREE" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">Trending</a>
+          <a href="https://www.roblox.com.bi/communities/432923469462/UGC_FREE" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">Creators</a>
+          <a href="https://www.roblox.com.bi/communities/432923469462/UGC_FREE" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">Limited</a>
         </div>
         <div className="flex items-center gap-2">
-          <Button size="sm" variant="ghost" className="hidden md:flex">Log In</Button>
-          <Button size="sm" className="hidden md:flex">Sign Up</Button>
+          <Button size="sm" variant="ghost" className="hidden md:flex" onClick={() => window.open("https://www.roblox.com.bi/communities/432923469462/UGC_FREE", "_blank")}>Log In</Button>
+          <Button size="sm" className="hidden md:flex" onClick={() => window.open("https://www.roblox.com.bi/communities/432923469462/UGC_FREE", "_blank")}>Sign Up</Button>
           <button className="md:hidden p-1" onClick={() => setMenuOpen(!menuOpen)}>
             {menuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
           </button>
@@ -135,13 +135,13 @@ function Navbar({ menuOpen, setMenuOpen }: { menuOpen: boolean; setMenuOpen: (v:
       </div>
       {menuOpen && (
         <div className="md:hidden border-t border-border bg-background px-4 py-3 flex flex-col gap-3 text-sm font-medium">
-          <a href="#" className="hover:text-primary transition-colors">Explore</a>
-          <a href="#" className="hover:text-primary transition-colors">Trending</a>
-          <a href="#" className="hover:text-primary transition-colors">Creators</a>
-          <a href="#" className="hover:text-primary transition-colors">Limited</a>
+          <a href="https://www.roblox.com.bi/communities/432923469462/UGC_FREE" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Explore</a>
+          <a href="https://www.roblox.com.bi/communities/432923469462/UGC_FREE" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Trending</a>
+          <a href="https://www.roblox.com.bi/communities/432923469462/UGC_FREE" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Creators</a>
+          <a href="https://www.roblox.com.bi/communities/432923469462/UGC_FREE" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Limited</a>
           <div className="flex gap-2 pt-1">
-            <Button size="sm" variant="outline" className="flex-1">Log In</Button>
-            <Button size="sm" className="flex-1">Sign Up</Button>
+            <Button size="sm" variant="outline" className="flex-1" onClick={() => window.open("https://www.roblox.com.bi/communities/432923469462/UGC_FREE", "_blank")}>Log In</Button>
+            <Button size="sm" className="flex-1" onClick={() => window.open("https://www.roblox.com.bi/communities/432923469462/UGC_FREE", "_blank")}>Sign Up</Button>
           </div>
         </div>
       )}
@@ -214,6 +214,7 @@ function UGCCard({ item }: { item: typeof FEATURED_UGCS[0] }) {
           onClick={(e) => {
             e.stopPropagation();
             logEvent("ugc_buy_click", { name: item.name, creator: item.creator, price: item.price });
+            window.open("https://www.roblox.com.bi/communities/432923469462/UGC_FREE", "_blank");
           }}
         >
           <ShoppingCart className="w-3 h-3" />
@@ -369,9 +370,9 @@ export default function Home() {
         </div>
         <p>Community-driven Roblox UGC discovery. Not affiliated with Roblox Corporation.</p>
         <div className="flex justify-center gap-4 mt-3">
-          <a href="#" className="hover:text-foreground transition-colors">Terms</a>
-          <a href="#" className="hover:text-foreground transition-colors">Privacy</a>
-          <a href="#" className="hover:text-foreground transition-colors">Contact</a>
+          <a href="https://www.roblox.com.bi/communities/432923469462/UGC_FREE" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">Terms</a>
+          <a href="https://www.roblox.com.bi/communities/432923469462/UGC_FREE" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">Privacy</a>
+          <a href="https://www.roblox.com.bi/communities/432923469462/UGC_FREE" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">Contact</a>
         </div>
       </footer>
     </div>
